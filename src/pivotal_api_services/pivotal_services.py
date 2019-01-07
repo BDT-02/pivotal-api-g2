@@ -6,4 +6,5 @@ class PivotalServices:
     __metaclass__ = ABCMeta
 
     def __init__(self):
-        self.request_handler = RequestManager.get_instance()
+        #self.request_handler = RequestManager.get_instance()
+        self.request_handler = RequestManager.get_instanceA()

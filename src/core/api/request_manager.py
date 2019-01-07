@@ -13,3 +13,16 @@ class RequestManager:
                 {"X-TrackerToken": ConfigHandler.get_config().get_token(),
                  "Content-Type": "application/json"})
         return RequestManager.__instance
+
+
+    @staticmethod
+    def get_instanceA():
+
+        if RequestManager.__instance is None:
+            RequestManager.__instance = RequestHandler()
+            RequestManager.__instance.session.headers.update(
+                {"X-CSRF-Token": ConfigHandler.get_config().get_xcsrftoken(),
+                 "Content-Type": "application/json",
+                 "X-Requested-With": "XMLHttpRequest",
+                 "Cookie": ConfigHandler.get_config().get_cookie()})
+        return RequestManager.__instance

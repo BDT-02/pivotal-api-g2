@@ -16,5 +16,14 @@ class ConfigReader:
     def get_base_api_url(self):
         return self.config["api"]["base_url"]
 
+    def get_base_api_urlA(self):
+        return self.config["api"]["base_urlA"]
+
+    def get_xcsrftoken(self):
+        return self.config["api"]["X-CSRF-Token"]
+
+    def get_cookie(self):
+        return self.config["api"]["Cookie"]
+
     def get_token(self):
         return self.config["api"]["token"]
