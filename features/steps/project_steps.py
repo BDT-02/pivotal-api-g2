@@ -1,5 +1,3 @@
-import time
-
 from behave import Given, then, step
 
 from src.pivotal_api_services.projects import ProjectServices
@@ -8,9 +6,11 @@ from src.utils.json_schema_validator import validate_json_schema
 project_services = ProjectServices()
 
 
-@Given("I create a project")
+@step("I create a project")
 def create_project_step(context):
-    data = {"name": "New Project1"}
+    data = {}
+    for row in context.table:
+        data = {"name": str(row['name'])}
     context.project_status, context.project_response = project_services.create_project(data)
 
 
