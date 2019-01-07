@@ -1,0 +1,147 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Epics Schema",
+  "required": [
+    "project_id",
+    "name",
+    "label",
+    "label_id",
+    "description",
+    "comments",
+    "pull_requests",
+    "branches",
+    "followers",
+    "follower_ids",
+    "after_id",
+    "before_id"
+  ],
+  "properties": {
+    "id": {
+      "$id": "#/properties/project_id",
+      "type": "integer",
+      "title": "The ID project",
+      "default": 0,
+      "examples": [
+        2209196
+      ]
+    },
+    "name": {
+      "$id": "#/properties/name",
+      "type": "string",
+      "title": "The name Schema",
+      "default": "",
+      "examples": [
+        "epics"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "label": {
+      "$id": "#/properties/label",
+      "type": "string",
+      "title": "The Name Schema",
+      "default": "",
+      "examples": [
+        "label"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "label_id": {
+      "$id": "#/properties/label_id",
+      "type": "integer",
+      "title": "The label_id",
+      "default": 0,
+      "examples": [
+        3
+      ]
+    },
+    "description": {
+      "$id": "#/properties/description",
+      "type": "string",
+      "title": "The description Schema",
+      "default": [],
+      "examples": [
+        [
+          "description"
+        ]
+      ]
+    },
+    "comments": {
+      "$id": "#/properties/comments",
+      "type": "object",
+      "title": "The comments Schema",
+      "default": "",
+      "examples": [
+        [
+          "comment"
+        ]
+      ],
+      "pattern": "^(.*)$"
+    },
+    "pull_requests": {
+      "$id": "#/properties/pull_requests",
+      "type": "object",
+      "title": "The pull_requests Schema",
+      "default": [],
+      "examples": [
+        [
+          "pull_requests"
+        ]
+      ],
+      "pattern": "^(.*)$"
+    },
+    "branches": {
+      "$id": "#/properties/branches",
+      "type": "object",
+      "title": "The branches Schema",
+      "default": [],
+      "examples": [
+        [
+          "branches"
+        ]
+      ]
+    },
+    "followers": {
+      "$id": "#/properties/followers",
+      "type": "object",
+      "title": "The followers Schema",
+      "default": [],
+      "examples": [
+        [
+          "followers"
+        ]
+      ]
+    },
+    "follower_ids": {
+      "$id": "#/properties/follower_ids",
+      "type": "object",
+      "title": "The follower_ids Schema",
+      "default": [],
+      "examples": [
+        [
+          1
+        ]
+      ]
+    },
+    "after_id": {
+      "$id": "#/properties/after_id",
+      "type": "integer",
+      "title": "The after_id Schema",
+      "default": 0,
+      "examples": [
+        1
+      ]
+    },
+    "before_id": {
+      "$id": "#/properties/before_id",
+      "type": "integer",
+      "title": "The before_id Schema",
+      "default": 0,
+      "examples": [
+        1
+      ]
+    }
+  }
+}
