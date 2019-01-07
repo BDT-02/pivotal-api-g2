@@ -12,7 +12,8 @@ class RequestHandler:
 
     def __init__(self):
         self.session = requests.Session()
-        self.main_url = ConfigHandler.get_config().get_base_api_urlA()
+        self.main_url = ConfigHandler.get_config().get_base_api_url()
+        self.main_url1 = ConfigHandler.get_config().get_base_api_urlA()
 
     def post_request(self, endpoint, body):
         logger.info("RequestHandler:: POST  {}, {}, {}".format(endpoint, json.dumps(body), self.session.headers))
