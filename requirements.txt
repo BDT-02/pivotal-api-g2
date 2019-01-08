@@ -3,3 +3,4 @@ behave
 jsonschema
 simplejson
 pyyaml
+gherkin-official
