@@ -6,10 +6,10 @@ Feature: showing off behave
       | name          |
       | First Project |
     When I create a epic
-      | label                  |
-      | {"name":"find-rebels"} |
+      | label      |
+      | Test epics |
     Then I verify epic created status is 200
-    And I verify project schema
+    And I verify epic schema
 
 
   @delete_project @delete_epics
@@ -18,13 +18,13 @@ Feature: showing off behave
       | name          |
       | First Project |
     And I create a epic
-      | label                  |
-      | {"name":"find-rebels"} |
+      | label      |
+      | Test epics |
     When I update a epic
-      | label                     |
-      | {"name":"updated-rebels"} |
+      | label             |
+      | Test Update epics |
     Then I verify epic updated status is 200
-    And I verify project schema
+    And I verify epic schema
 
   @delete_project
   Scenario: Delete the epic
@@ -32,7 +32,7 @@ Feature: showing off behave
       | name          |
       | First Project |
     And I create a epic
-      | label                  |
-      | {"name":"find-rebels"} |
+      | label      |
+      | Test epics |
     When I delete the epic
-    Then I verify project deleted status is 204
+    Then I verify epic updated status is 204

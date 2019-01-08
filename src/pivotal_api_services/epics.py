@@ -10,13 +10,15 @@ class EpicServices(PivotalServices):
 
     def __init__(self):
         super(EpicServices, self).__init__()
-        self.endPoint = "{}/projects/{}".format(self.request_handler.main_url, "{}epics")
+        self.endPoint = "{}/projects/{}".format(self.request_handler.main_url, "{}/epics")
+        print self.endPoint
         self.__epic_schema_path = "/src/core/api/json_schemas/epics_schema.json"
         self.epic = {}
         self.epics = {}
 
     def create_epic(self, id_project, data):
         current_url = self.endPoint.format(id_project)
+        print data
         response = self.request_handler.post_request(endpoint=current_url, body=data)
         return response.status_code, response.json()
 
