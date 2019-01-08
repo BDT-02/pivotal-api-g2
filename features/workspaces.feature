@@ -1,6 +1,13 @@
-# Created by Administrator at 12/21/2018
-Feature: #Enter feature name here
-  # Enter feature description here
+Feature: showing off behave
 
-  Scenario: # Enter scenario name here
-    # Enter steps here
+  Scenario: Create new workspace
+    Given I create a workspace
+      | name | First Workspace |
+    Then I verify workspace creation status is 200
+    And I verify workspace schema
+
+  Scenario: Get project
+    Given I create a workspace
+      | name | First Workspace |
+    Then I verify workspace creation status is 200
+    And I verify workspace schema
