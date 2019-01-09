@@ -27,5 +27,5 @@ def i_delete_all_project
     
     
 To install:
-jsonschema
-simplejson
+install requirements.txt with command
+pip install -r requirements.txt

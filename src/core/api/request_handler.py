@@ -20,6 +20,12 @@ class RequestHandler:
         logger.info("RequestHandler:: POST RESPONSE:: {}, {}".format(response.status_code, response.json()))
         return response
 
+    def put_request(self, endpoint, body):
+        logger.info("RequestHandler:: PUT {}, {}, {}".format(endpoint, json.dumps(body), self.session.headers))
+        response = self.requests_retry_session(session=self.session).put(endpoint, json.dumps(body))
+        logger.info("RequestHandler:: PUT RESPONSE:: {}, {}".format(response.status_code, response.json()))
+        return response
+
     def get_request(self, endpoint):
         logger.info("RequestHandler:: GET  {}".format(endpoint))
         response = self.requests_retry_session(session=self.session).get(endpoint)
@@ -29,6 +35,7 @@ class RequestHandler:
     def delete_request(self, endpoint):
         logger.info("RequestHandler:: DELETE  {}".format(endpoint))
         response = self.requests_retry_session(session=self.session).delete(endpoint)
+        logger.info("RequestHandler:: DELETE RESPONSE:: {}".format(response.status_code))
         return response
 
     @property

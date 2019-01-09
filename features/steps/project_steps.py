@@ -1,5 +1,3 @@
-import time
-
 from behave import Given, then, step
 
 from src.pivotal_api_services.projects import ProjectServices
@@ -8,16 +6,44 @@ from src.utils.json_schema_validator import validate_json_schema
 project_services = ProjectServices()
 
 
-@Given("I create a project")
+@step("I create a project")
 def create_project_step(context):
-    data = {"name": "New Project1"}
+    data = {}
+    for row in context.table:
+        data = {"name": str(row['name'])}
     context.project_status, context.project_response = project_services.create_project(data)
 
 
-@then('I verify project creation status is {status_code}')
+@step("I update the project")
+def update_project_step(context):
+    data = {}
+    for row in context.table:
+        data = {"name": str(row['name'])}
+    context.project_status, context.project_response = project_services.update_project(
+        id=str(context.project_response["id"]), data=data)
+
+
+@step("I delete the project")
+def update_project_step(context):
+    context.project_status = project_services.delete_project(id=str(context.project_response["id"]))
+
+
+@then('I verify project updated status is {status_code}')
+def step_impl(context, status_code):
+    print(context.project_status)
+    assert context.project_status == int(status_code), "Project updated status is %s" % status_code
+
+
+@then('I verify project created status is {status_code}')
 def step_impl(context, status_code):
     print(context.project_status)
     assert context.project_status == int(status_code), "Project creation status is %s" % status_code
+
+
+@then('I verify project deleted status is {status_code}')
+def step_impl(context, status_code):
+    print(context.project_status)
+    assert context.project_status == int(status_code), "Project deleted status is %s" % status_code
 
 
 @step('I verify project schema')
