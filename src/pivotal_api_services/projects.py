@@ -5,7 +5,6 @@ from src.utils.string_handler import StringHandler
 
 logger = LoggerHandler.get_instance()
 
-
 class ProjectServices(PivotalServices):
 
     def __init__(self):
