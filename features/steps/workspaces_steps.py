@@ -34,16 +34,11 @@ def step_impl(context, status_code):
     assert context.workspace_status == int(status_code), "Workspace updated status is %s" % status_code
 
 
-@then('I verify workspace creation status is {status_code}')
-def step_impl(context, status_code):
+@then('I verify workspace {method_verb} status is {status_code}')
+def step_impl(context, method_verb, status_code):
     print(context.workspace_status)
-    assert context.workspace_status == int(status_code), "Workspace creation status is %s" % status_code
-
-
-@then('I verify workspace deleted status is {status_code}')
-def step_impl(context, status_code):
-    print(context.workspace_status)
-    assert context.workspace_status == int(status_code), "Workspace deleted status is %s" % status_code
+    assert method_verb.lower() in ["creation", "delete"]
+    assert context.workspace_status == int(status_code), "Workspace %s status is %s" % (method_verb, status_code)
 
 
 @step('I verify workspace schema')
