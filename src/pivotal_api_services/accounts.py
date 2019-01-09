@@ -10,13 +10,13 @@ class AccountServices(PivotalServices):
 
     def __init__(self):
         super(AccountServices, self).__init__()
-        self.__account = "{}accounts".format(self.request_handler.main_url1)
+        self.__account = "{}accounts".format(self.request_handler_account.main_urlaccount)
         self.__account_schema_path = "/src/core/api/json_schemas/account_schema.json"
         self.account = {}
         self.accounts = {}
 
     def create_account(self, data):
-        response = self.request_handler.post_request(endpoint=self.__account, body=data)
+        response = self.request_handler_account.post_request(endpoint=self.__account, body=data)
         return response.status_code, response.json()
 
     def get_accounts(self):

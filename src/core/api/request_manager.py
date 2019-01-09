@@ -15,14 +15,16 @@ class RequestManager:
         return RequestManager.__instance
 
 
-    @staticmethod
-    def get_instanceA():
+class RequestManagerAccount:
+    __instance_account = None
 
-        if RequestManager.__instance is None:
-            RequestManager.__instance = RequestHandler()
-            RequestManager.__instance.session.headers.update(
+    @staticmethod
+    def get_instanceAccount():
+        if RequestManagerAccount.__instance_account is None:
+            RequestManagerAccount.__instance_account = RequestHandler()
+            RequestManagerAccount.__instance_account.session.headers.update(
                 {"X-CSRF-Token": ConfigHandler.get_config().get_xcsrftoken(),
                  "Content-Type": "application/json",
                  "X-Requested-With": "XMLHttpRequest",
                  "Cookie": ConfigHandler.get_config().get_cookie()})
-        return RequestManager.__instance
+        return RequestManagerAccount.__instance_account

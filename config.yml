@@ -1,8 +1,8 @@
 api:
   #options in level
   base_url: https://www.pivotaltracker.com/services/v5/
-  base_urlA: https://www.pivotaltracker.com/
+  base_urlAccount: https://www.pivotaltracker.com/
   token:
   log_path: .\pivotal_bdt.log
   X-CSRF-Token:
-  Cookie:
+  Cookie: 
