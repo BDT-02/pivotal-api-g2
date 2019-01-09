@@ -388,3 +388,397 @@
 01-09 09:27 root         INFO     RequestHandler:: POST RESPONSE:: 200, {u'version': 1, u'velocity_averaged_over': 3, u'updated_at': u'2019-01-09T13:27:34Z', u'iteration_length': 1, u'project_type': u'private', u'enable_tasks': True, u'id': 2236824, u'week_start_day': u'Monday', u'point_scale_is_custom': False, u'atom_enabled': False, u'public': False, u'account_id': 1075095, u'bugs_and_chores_are_estimatable': False, u'automatic_planning': True, u'start_time': u'2019-01-07T08:00:00Z', u'enable_following': True, u'initial_velocity': 10, u'number_of_done_iterations_to_show': 4, u'kind': u'project', u'name': u'First Project', u'enable_incoming_emails': True, u'current_iteration_number': 1, u'point_scale': u'0,1,2,3', u'time_zone': {u'olson_name': u'America/Los_Angeles', u'kind': u'time_zone', u'offset': u'-08:00'}, u'has_google_domain': False, u'created_at': u'2019-01-09T13:27:34Z'}
 01-09 09:27 root         INFO     RequestHandler:: DELETE  https://www.pivotaltracker.com/services/v5//projects/2236824
 01-09 09:27 root         INFO     RequestHandler:: DELETE RESPONSE:: 204
+01-09 09:33 parse        DEBUG    format u'I create a epic' -> u'I create a epic'
+01-09 09:33 parse        DEBUG    format u'I update a epic' -> u'I update a epic'
+01-09 09:33 parse        DEBUG    format u'I delete the epic' -> u'I delete the epic'
+01-09 09:33 parse        DEBUG    format u'I verify epic updated status is {status_code}' -> u'I verify epic updated status is (?P<status_code>.+?)'
+01-09 09:33 parse        DEBUG    format u'I verify epic created status is {status_code}' -> u'I verify epic created status is (?P<status_code>.+?)'
+01-09 09:33 parse        DEBUG    format u'I verify epic deleted status is {status_code}' -> u'I verify epic deleted status is (?P<status_code>.+?)'
+01-09 09:33 parse        DEBUG    format u'I verify epic schema' -> u'I verify epic schema'
+01-09 09:33 parse        DEBUG    format u'I create a project' -> u'I create a project'
+01-09 09:33 parse        DEBUG    format u'I update the project' -> u'I update the project'
+01-09 09:33 parse        DEBUG    format u'I delete the project' -> u'I delete the project'
+01-09 09:33 parse        DEBUG    format u'I verify project updated status is {status_code}' -> u'I verify project updated status is (?P<status_code>.+?)'
+01-09 09:33 parse        DEBUG    format u'I verify project created status is {status_code}' -> u'I verify project created status is (?P<status_code>.+?)'
+01-09 09:33 parse        DEBUG    format u'I verify project deleted status is {status_code}' -> u'I verify project deleted status is (?P<status_code>.+?)'
+01-09 09:33 parse        DEBUG    format u'I verify project schema' -> u'I verify project schema'
+01-09 09:33 parse        DEBUG    format u'I create a workspace' -> u'I create a workspace'
+01-09 09:33 parse        DEBUG    format u'I update the workspace' -> u'I update the workspace'
+01-09 09:33 parse        DEBUG    format u'I delete the workspace' -> u'I delete the workspace'
+01-09 09:33 parse        DEBUG    format u'I verify workspace updated status is {status_code}' -> u'I verify workspace updated status is (?P<status_code>.+?)'
+01-09 09:33 parse        DEBUG    format u'I verify workspace {method_verb} status is {status_code}' -> u'I verify workspace (?P<method_verb>.+?) status is (?P<status_code>.+?)'
+01-09 09:33 parse        DEBUG    format u'I verify workspace schema' -> u'I verify workspace schema'
+01-09 09:33 root         INFO     RequestHandler:: POST  https://www.pivotaltracker.com/services/v5//projects, {"name": "First Project"}, {'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'X-TrackerToken': '14aa1e75e7a293419cf2a1f76ed726ff', 'Content-Type': 'application/json'}
+01-09 09:33 root         INFO     RequestHandler:: POST RESPONSE:: 200, {u'version': 1, u'velocity_averaged_over': 3, u'updated_at': u'2019-01-09T13:33:57Z', u'iteration_length': 1, u'project_type': u'private', u'enable_tasks': True, u'id': 2236827, u'week_start_day': u'Monday', u'point_scale_is_custom': False, u'atom_enabled': False, u'public': False, u'account_id': 1075095, u'bugs_and_chores_are_estimatable': False, u'automatic_planning': True, u'start_time': u'2019-01-07T08:00:00Z', u'enable_following': True, u'initial_velocity': 10, u'number_of_done_iterations_to_show': 4, u'kind': u'project', u'name': u'First Project', u'enable_incoming_emails': True, u'current_iteration_number': 1, u'point_scale': u'0,1,2,3', u'time_zone': {u'olson_name': u'America/Los_Angeles', u'kind': u'time_zone', u'offset': u'-08:00'}, u'has_google_domain': False, u'created_at': u'2019-01-09T13:33:57Z'}
+01-09 09:33 root         INFO     RequestHandler:: GET  https://www.pivotaltracker.com/services/v5//projects/2236827
+01-09 09:33 root         INFO     RequestHandler:: GET RESPONSE:: 200, {u'version': 1, u'velocity_averaged_over': 3, u'updated_at': u'2019-01-09T13:33:57Z', u'iteration_length': 1, u'project_type': u'private', u'enable_tasks': True, u'id': 2236827, u'week_start_day': u'Monday', u'point_scale_is_custom': False, u'atom_enabled': False, u'public': False, u'account_id': 1075095, u'bugs_and_chores_are_estimatable': False, u'automatic_planning': True, u'start_time': u'2019-01-07T08:00:00Z', u'enable_following': True, u'initial_velocity': 10, u'number_of_done_iterations_to_show': 4, u'kind': u'project', u'name': u'First Project', u'enable_incoming_emails': True, u'current_iteration_number': 1, u'point_scale': u'0,1,2,3', u'time_zone': {u'olson_name': u'America/Los_Angeles', u'kind': u'time_zone', u'offset': u'-08:00'}, u'has_google_domain': False, u'created_at': u'2019-01-09T13:33:57Z'}
+01-09 09:33 root         INFO     Getting Content of file::/src/core/api/json_schemas/project_schema.json
+01-09 09:33 root         INFO     Validate Schema
+01-09 09:33 root         INFO     RequestHandler:: GET  https://www.pivotaltracker.com/services/v5//projects
+01-09 09:33 root         INFO     RequestHandler:: GET RESPONSE:: 200, [{u'version': 2, u'velocity_averaged_over': 3, u'updated_at': u'2019-01-09T13:31:31Z', u'iteration_length': 1, u'project_type': u'private', u'enable_tasks': True, u'id': 2236826, u'week_start_day': u'Monday', u'point_scale_is_custom': False, u'atom_enabled': False, u'public': False, u'account_id': 1075095, u'bugs_and_chores_are_estimatable': False, u'automatic_planning': True, u'start_time': u'2019-01-07T08:00:00Z', u'enable_following': True, u'initial_velocity': 10, u'number_of_done_iterations_to_show': 4, u'kind': u'project', u'name': u'Test', u'enable_incoming_emails': True, u'current_iteration_number': 1, u'point_scale': u'0,1,2,3', u'time_zone': {u'olson_name': u'America/Los_Angeles', u'kind': u'time_zone', u'offset': u'-08:00'}, u'has_google_domain': False, u'created_at': u'2019-01-09T13:31:31Z'}, {u'version': 1, u'velocity_averaged_over': 3, u'updated_at': u'2019-01-09T13:33:57Z', u'iteration_length': 1, u'project_type': u'private', u'enable_tasks': True, u'id': 2236827, u'week_start_day': u'Monday', u'point_scale_is_custom': False, u'atom_enabled': False, u'public': False, u'account_id': 1075095, u'bugs_and_chores_are_estimatable': False, u'automatic_planning': True, u'start_time': u'2019-01-07T08:00:00Z', u'enable_following': True, u'initial_velocity': 10, u'number_of_done_iterations_to_show': 4, u'kind': u'project', u'name': u'First Project', u'enable_incoming_emails': True, u'current_iteration_number': 1, u'point_scale': u'0,1,2,3', u'time_zone': {u'olson_name': u'America/Los_Angeles', u'kind': u'time_zone', u'offset': u'-08:00'}, u'has_google_domain': False, u'created_at': u'2019-01-09T13:33:57Z'}]
+01-09 09:33 root         INFO     Deleting https://www.pivotaltracker.com/services/v5//projects/2236826
+01-09 09:33 root         INFO     RequestHandler:: DELETE  https://www.pivotaltracker.com/services/v5//projects/2236826
+01-09 09:33 root         INFO     RequestHandler:: DELETE RESPONSE:: 204
+01-09 09:33 root         INFO     Deleting https://www.pivotaltracker.com/services/v5//projects/2236827
+01-09 09:33 root         INFO     RequestHandler:: DELETE  https://www.pivotaltracker.com/services/v5//projects/2236827
+01-09 09:34 root         INFO     RequestHandler:: DELETE RESPONSE:: 204
+01-09 09:34 root         INFO     Delete all project created
+01-09 09:34 root         INFO     RequestHandler:: POST  https://www.pivotaltracker.com/services/v5//projects, {"name": "First Project"}, {'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'X-TrackerToken': '14aa1e75e7a293419cf2a1f76ed726ff', 'Content-Type': 'application/json'}
+01-09 09:34 root         INFO     RequestHandler:: POST RESPONSE:: 200, {u'version': 1, u'velocity_averaged_over': 3, u'updated_at': u'2019-01-09T13:34:00Z', u'iteration_length': 1, u'project_type': u'private', u'enable_tasks': True, u'id': 2236828, u'week_start_day': u'Monday', u'point_scale_is_custom': False, u'atom_enabled': False, u'public': False, u'account_id': 1075095, u'bugs_and_chores_are_estimatable': False, u'automatic_planning': True, u'start_time': u'2019-01-07T08:00:00Z', u'enable_following': True, u'initial_velocity': 10, u'number_of_done_iterations_to_show': 4, u'kind': u'project', u'name': u'First Project', u'enable_incoming_emails': True, u'current_iteration_number': 1, u'point_scale': u'0,1,2,3', u'time_zone': {u'olson_name': u'America/Los_Angeles', u'kind': u'time_zone', u'offset': u'-08:00'}, u'has_google_domain': False, u'created_at': u'2019-01-09T13:34:00Z'}
+01-09 09:34 root         INFO     RequestHandler:: PUT https://www.pivotaltracker.com/services/v5//projects/2236828, {"name": "Update Project"}, {'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'X-TrackerToken': '14aa1e75e7a293419cf2a1f76ed726ff', 'Content-Type': 'application/json'}
+01-09 09:34 root         INFO     RequestHandler:: PUT RESPONSE:: 200, {u'version': 2, u'velocity_averaged_over': 3, u'updated_at': u'2019-01-09T13:34:01Z', u'iteration_length': 1, u'project_type': u'private', u'enable_tasks': True, u'id': 2236828, u'week_start_day': u'Monday', u'point_scale_is_custom': False, u'atom_enabled': False, u'public': False, u'account_id': 1075095, u'bugs_and_chores_are_estimatable': False, u'automatic_planning': True, u'start_time': u'2019-01-07T08:00:00Z', u'enable_following': True, u'initial_velocity': 10, u'number_of_done_iterations_to_show': 4, u'kind': u'project', u'name': u'Update Project', u'enable_incoming_emails': True, u'current_iteration_number': 1, u'point_scale': u'0,1,2,3', u'time_zone': {u'olson_name': u'America/Los_Angeles', u'kind': u'time_zone', u'offset': u'-08:00'}, u'has_google_domain': False, u'created_at': u'2019-01-09T13:34:00Z'}
+01-09 09:34 root         INFO     RequestHandler:: GET  https://www.pivotaltracker.com/services/v5//projects/2236828
+01-09 09:34 root         INFO     RequestHandler:: GET RESPONSE:: 200, {u'version': 2, u'velocity_averaged_over': 3, u'updated_at': u'2019-01-09T13:34:01Z', u'iteration_length': 1, u'project_type': u'private', u'enable_tasks': True, u'id': 2236828, u'week_start_day': u'Monday', u'point_scale_is_custom': False, u'atom_enabled': False, u'public': False, u'account_id': 1075095, u'bugs_and_chores_are_estimatable': False, u'automatic_planning': True, u'start_time': u'2019-01-07T08:00:00Z', u'enable_following': True, u'initial_velocity': 10, u'number_of_done_iterations_to_show': 4, u'kind': u'project', u'name': u'Update Project', u'enable_incoming_emails': True, u'current_iteration_number': 1, u'point_scale': u'0,1,2,3', u'time_zone': {u'olson_name': u'America/Los_Angeles', u'kind': u'time_zone', u'offset': u'-08:00'}, u'has_google_domain': False, u'created_at': u'2019-01-09T13:34:00Z'}
+01-09 09:34 root         INFO     Getting Content of file::/src/core/api/json_schemas/project_schema.json
+01-09 09:34 root         INFO     Validate Schema
+01-09 09:34 root         INFO     RequestHandler:: GET  https://www.pivotaltracker.com/services/v5//projects
+01-09 09:34 root         INFO     RequestHandler:: GET RESPONSE:: 200, [{u'version': 2, u'velocity_averaged_over': 3, u'updated_at': u'2019-01-09T13:34:01Z', u'iteration_length': 1, u'project_type': u'private', u'enable_tasks': True, u'id': 2236828, u'week_start_day': u'Monday', u'point_scale_is_custom': False, u'atom_enabled': False, u'public': False, u'account_id': 1075095, u'bugs_and_chores_are_estimatable': False, u'automatic_planning': True, u'start_time': u'2019-01-07T08:00:00Z', u'enable_following': True, u'initial_velocity': 10, u'number_of_done_iterations_to_show': 4, u'kind': u'project', u'name': u'Update Project', u'enable_incoming_emails': True, u'current_iteration_number': 1, u'point_scale': u'0,1,2,3', u'time_zone': {u'olson_name': u'America/Los_Angeles', u'kind': u'time_zone', u'offset': u'-08:00'}, u'has_google_domain': False, u'created_at': u'2019-01-09T13:34:00Z'}]
+01-09 09:34 root         INFO     Deleting https://www.pivotaltracker.com/services/v5//projects/2236828
+01-09 09:34 root         INFO     RequestHandler:: DELETE  https://www.pivotaltracker.com/services/v5//projects/2236828
+01-09 09:34 root         INFO     RequestHandler:: DELETE RESPONSE:: 204
+01-09 09:34 root         INFO     Delete all project created
+01-09 09:34 parse        DEBUG    format u'I create a epic' -> u'I create a epic'
+01-09 09:34 parse        DEBUG    format u'I update a epic' -> u'I update a epic'
+01-09 09:34 parse        DEBUG    format u'I delete the epic' -> u'I delete the epic'
+01-09 09:34 parse        DEBUG    format u'I verify epic updated status is {status_code}' -> u'I verify epic updated status is (?P<status_code>.+?)'
+01-09 09:34 parse        DEBUG    format u'I verify epic created status is {status_code}' -> u'I verify epic created status is (?P<status_code>.+?)'
+01-09 09:34 parse        DEBUG    format u'I verify epic deleted status is {status_code}' -> u'I verify epic deleted status is (?P<status_code>.+?)'
+01-09 09:34 parse        DEBUG    format u'I verify epic schema' -> u'I verify epic schema'
+01-09 09:34 parse        DEBUG    format u'I create a project' -> u'I create a project'
+01-09 09:34 parse        DEBUG    format u'I update the project' -> u'I update the project'
+01-09 09:34 parse        DEBUG    format u'I delete the project' -> u'I delete the project'
+01-09 09:34 parse        DEBUG    format u'I verify project updated status is {status_code}' -> u'I verify project updated status is (?P<status_code>.+?)'
+01-09 09:34 parse        DEBUG    format u'I verify project created status is {status_code}' -> u'I verify project created status is (?P<status_code>.+?)'
+01-09 09:34 parse        DEBUG    format u'I verify project deleted status is {status_code}' -> u'I verify project deleted status is (?P<status_code>.+?)'
+01-09 09:34 parse        DEBUG    format u'I verify project schema' -> u'I verify project schema'
+01-09 09:34 parse        DEBUG    format u'I create a workspace' -> u'I create a workspace'
+01-09 09:34 parse        DEBUG    format u'I update the workspace' -> u'I update the workspace'
+01-09 09:34 parse        DEBUG    format u'I delete the workspace' -> u'I delete the workspace'
+01-09 09:34 parse        DEBUG    format u'I verify workspace updated status is {status_code}' -> u'I verify workspace updated status is (?P<status_code>.+?)'
+01-09 09:34 parse        DEBUG    format u'I verify workspace {method_verb} status is {status_code}' -> u'I verify workspace (?P<method_verb>.+?) status is (?P<status_code>.+?)'
+01-09 09:34 parse        DEBUG    format u'I verify workspace schema' -> u'I verify workspace schema'
+01-09 09:34 root         INFO     RequestHandler:: POST  https://www.pivotaltracker.com/services/v5//projects, {"name": "First Project"}, {'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'X-TrackerToken': '14aa1e75e7a293419cf2a1f76ed726ff', 'Content-Type': 'application/json'}
+01-09 09:34 root         INFO     RequestHandler:: POST RESPONSE:: 200, {u'version': 1, u'velocity_averaged_over': 3, u'updated_at': u'2019-01-09T13:34:55Z', u'iteration_length': 1, u'project_type': u'private', u'enable_tasks': True, u'id': 2236829, u'week_start_day': u'Monday', u'point_scale_is_custom': False, u'atom_enabled': False, u'public': False, u'account_id': 1075095, u'bugs_and_chores_are_estimatable': False, u'automatic_planning': True, u'start_time': u'2019-01-07T08:00:00Z', u'enable_following': True, u'initial_velocity': 10, u'number_of_done_iterations_to_show': 4, u'kind': u'project', u'name': u'First Project', u'enable_incoming_emails': True, u'current_iteration_number': 1, u'point_scale': u'0,1,2,3', u'time_zone': {u'olson_name': u'America/Los_Angeles', u'kind': u'time_zone', u'offset': u'-08:00'}, u'has_google_domain': False, u'created_at': u'2019-01-09T13:34:55Z'}
+01-09 09:34 root         INFO     RequestHandler:: GET  https://www.pivotaltracker.com/services/v5//projects/2236829
+01-09 09:34 root         INFO     RequestHandler:: GET RESPONSE:: 200, {u'version': 1, u'velocity_averaged_over': 3, u'updated_at': u'2019-01-09T13:34:55Z', u'iteration_length': 1, u'project_type': u'private', u'enable_tasks': True, u'id': 2236829, u'week_start_day': u'Monday', u'point_scale_is_custom': False, u'atom_enabled': False, u'public': False, u'account_id': 1075095, u'bugs_and_chores_are_estimatable': False, u'automatic_planning': True, u'start_time': u'2019-01-07T08:00:00Z', u'enable_following': True, u'initial_velocity': 10, u'number_of_done_iterations_to_show': 4, u'kind': u'project', u'name': u'First Project', u'enable_incoming_emails': True, u'current_iteration_number': 1, u'point_scale': u'0,1,2,3', u'time_zone': {u'olson_name': u'America/Los_Angeles', u'kind': u'time_zone', u'offset': u'-08:00'}, u'has_google_domain': False, u'created_at': u'2019-01-09T13:34:55Z'}
+01-09 09:34 root         INFO     Getting Content of file::/src/core/api/json_schemas/project_schema.json
+01-09 09:34 root         INFO     Validate Schema
+01-09 09:34 root         INFO     RequestHandler:: GET  https://www.pivotaltracker.com/services/v5//projects
+01-09 09:34 root         INFO     RequestHandler:: GET RESPONSE:: 200, [{u'version': 1, u'velocity_averaged_over': 3, u'updated_at': u'2019-01-09T13:34:55Z', u'iteration_length': 1, u'project_type': u'private', u'enable_tasks': True, u'id': 2236829, u'week_start_day': u'Monday', u'point_scale_is_custom': False, u'atom_enabled': False, u'public': False, u'account_id': 1075095, u'bugs_and_chores_are_estimatable': False, u'automatic_planning': True, u'start_time': u'2019-01-07T08:00:00Z', u'enable_following': True, u'initial_velocity': 10, u'number_of_done_iterations_to_show': 4, u'kind': u'project', u'name': u'First Project', u'enable_incoming_emails': True, u'current_iteration_number': 1, u'point_scale': u'0,1,2,3', u'time_zone': {u'olson_name': u'America/Los_Angeles', u'kind': u'time_zone', u'offset': u'-08:00'}, u'has_google_domain': False, u'created_at': u'2019-01-09T13:34:55Z'}]
+01-09 09:34 root         INFO     Deleting https://www.pivotaltracker.com/services/v5//projects/2236829
+01-09 09:34 root         INFO     RequestHandler:: DELETE  https://www.pivotaltracker.com/services/v5//projects/2236829
+01-09 09:34 root         INFO     RequestHandler:: DELETE RESPONSE:: 204
+01-09 09:34 root         INFO     Delete all project created
+01-09 09:34 root         INFO     RequestHandler:: POST  https://www.pivotaltracker.com/services/v5//projects, {"name": "First Project"}, {'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'X-TrackerToken': '14aa1e75e7a293419cf2a1f76ed726ff', 'Content-Type': 'application/json'}
+01-09 09:34 root         INFO     RequestHandler:: POST RESPONSE:: 200, {u'version': 1, u'velocity_averaged_over': 3, u'updated_at': u'2019-01-09T13:34:58Z', u'iteration_length': 1, u'project_type': u'private', u'enable_tasks': True, u'id': 2236830, u'week_start_day': u'Monday', u'point_scale_is_custom': False, u'atom_enabled': False, u'public': False, u'account_id': 1075095, u'bugs_and_chores_are_estimatable': False, u'automatic_planning': True, u'start_time': u'2019-01-07T08:00:00Z', u'enable_following': True, u'initial_velocity': 10, u'number_of_done_iterations_to_show': 4, u'kind': u'project', u'name': u'First Project', u'enable_incoming_emails': True, u'current_iteration_number': 1, u'point_scale': u'0,1,2,3', u'time_zone': {u'olson_name': u'America/Los_Angeles', u'kind': u'time_zone', u'offset': u'-08:00'}, u'has_google_domain': False, u'created_at': u'2019-01-09T13:34:58Z'}
+01-09 09:34 root         INFO     RequestHandler:: PUT https://www.pivotaltracker.com/services/v5//projects/2236830, {"name": "Update Project"}, {'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'X-TrackerToken': '14aa1e75e7a293419cf2a1f76ed726ff', 'Content-Type': 'application/json'}
+01-09 09:34 root         INFO     RequestHandler:: PUT RESPONSE:: 200, {u'version': 2, u'velocity_averaged_over': 3, u'updated_at': u'2019-01-09T13:34:59Z', u'iteration_length': 1, u'project_type': u'private', u'enable_tasks': True, u'id': 2236830, u'week_start_day': u'Monday', u'point_scale_is_custom': False, u'atom_enabled': False, u'public': False, u'account_id': 1075095, u'bugs_and_chores_are_estimatable': False, u'automatic_planning': True, u'start_time': u'2019-01-07T08:00:00Z', u'enable_following': True, u'initial_velocity': 10, u'number_of_done_iterations_to_show': 4, u'kind': u'project', u'name': u'Update Project', u'enable_incoming_emails': True, u'current_iteration_number': 1, u'point_scale': u'0,1,2,3', u'time_zone': {u'olson_name': u'America/Los_Angeles', u'kind': u'time_zone', u'offset': u'-08:00'}, u'has_google_domain': False, u'created_at': u'2019-01-09T13:34:58Z'}
+01-09 09:34 root         INFO     RequestHandler:: GET  https://www.pivotaltracker.com/services/v5//projects/2236830
+01-09 09:34 root         INFO     RequestHandler:: GET RESPONSE:: 200, {u'version': 2, u'velocity_averaged_over': 3, u'updated_at': u'2019-01-09T13:34:59Z', u'iteration_length': 1, u'project_type': u'private', u'enable_tasks': True, u'id': 2236830, u'week_start_day': u'Monday', u'point_scale_is_custom': False, u'atom_enabled': False, u'public': False, u'account_id': 1075095, u'bugs_and_chores_are_estimatable': False, u'automatic_planning': True, u'start_time': u'2019-01-07T08:00:00Z', u'enable_following': True, u'initial_velocity': 10, u'number_of_done_iterations_to_show': 4, u'kind': u'project', u'name': u'Update Project', u'enable_incoming_emails': True, u'current_iteration_number': 1, u'point_scale': u'0,1,2,3', u'time_zone': {u'olson_name': u'America/Los_Angeles', u'kind': u'time_zone', u'offset': u'-08:00'}, u'has_google_domain': False, u'created_at': u'2019-01-09T13:34:58Z'}
+01-09 09:34 root         INFO     Getting Content of file::/src/core/api/json_schemas/project_schema.json
+01-09 09:34 root         INFO     Validate Schema
+01-09 09:34 root         INFO     RequestHandler:: GET  https://www.pivotaltracker.com/services/v5//projects
+01-09 09:35 root         INFO     RequestHandler:: GET RESPONSE:: 200, [{u'version': 2, u'velocity_averaged_over': 3, u'updated_at': u'2019-01-09T13:34:59Z', u'iteration_length': 1, u'project_type': u'private', u'enable_tasks': True, u'id': 2236830, u'week_start_day': u'Monday', u'point_scale_is_custom': False, u'atom_enabled': False, u'public': False, u'account_id': 1075095, u'bugs_and_chores_are_estimatable': False, u'automatic_planning': True, u'start_time': u'2019-01-07T08:00:00Z', u'enable_following': True, u'initial_velocity': 10, u'number_of_done_iterations_to_show': 4, u'kind': u'project', u'name': u'Update Project', u'enable_incoming_emails': True, u'current_iteration_number': 1, u'point_scale': u'0,1,2,3', u'time_zone': {u'olson_name': u'America/Los_Angeles', u'kind': u'time_zone', u'offset': u'-08:00'}, u'has_google_domain': False, u'created_at': u'2019-01-09T13:34:58Z'}]
+01-09 09:35 root         INFO     Deleting https://www.pivotaltracker.com/services/v5//projects/2236830
+01-09 09:35 root         INFO     RequestHandler:: DELETE  https://www.pivotaltracker.com/services/v5//projects/2236830
+01-09 09:35 root         INFO     RequestHandler:: DELETE RESPONSE:: 204
+01-09 09:35 root         INFO     Delete all project created
+01-09 09:35 parse        DEBUG    format u'I create a epic' -> u'I create a epic'
+01-09 09:35 parse        DEBUG    format u'I update a epic' -> u'I update a epic'
+01-09 09:35 parse        DEBUG    format u'I delete the epic' -> u'I delete the epic'
+01-09 09:35 parse        DEBUG    format u'I verify epic updated status is {status_code}' -> u'I verify epic updated status is (?P<status_code>.+?)'
+01-09 09:35 parse        DEBUG    format u'I verify epic created status is {status_code}' -> u'I verify epic created status is (?P<status_code>.+?)'
+01-09 09:35 parse        DEBUG    format u'I verify epic deleted status is {status_code}' -> u'I verify epic deleted status is (?P<status_code>.+?)'
+01-09 09:35 parse        DEBUG    format u'I verify epic schema' -> u'I verify epic schema'
+01-09 09:35 parse        DEBUG    format u'I create a project' -> u'I create a project'
+01-09 09:35 parse        DEBUG    format u'I update the project' -> u'I update the project'
+01-09 09:35 parse        DEBUG    format u'I delete the project' -> u'I delete the project'
+01-09 09:35 parse        DEBUG    format u'I verify project updated status is {status_code}' -> u'I verify project updated status is (?P<status_code>.+?)'
+01-09 09:35 parse        DEBUG    format u'I verify project created status is {status_code}' -> u'I verify project created status is (?P<status_code>.+?)'
+01-09 09:35 parse        DEBUG    format u'I verify project deleted status is {status_code}' -> u'I verify project deleted status is (?P<status_code>.+?)'
+01-09 09:35 parse        DEBUG    format u'I verify project schema' -> u'I verify project schema'
+01-09 09:35 parse        DEBUG    format u'I create a workspace' -> u'I create a workspace'
+01-09 09:35 parse        DEBUG    format u'I update the workspace' -> u'I update the workspace'
+01-09 09:35 parse        DEBUG    format u'I delete the workspace' -> u'I delete the workspace'
+01-09 09:35 parse        DEBUG    format u'I verify workspace updated status is {status_code}' -> u'I verify workspace updated status is (?P<status_code>.+?)'
+01-09 09:35 parse        DEBUG    format u'I verify workspace {method_verb} status is {status_code}' -> u'I verify workspace (?P<method_verb>.+?) status is (?P<status_code>.+?)'
+01-09 09:35 parse        DEBUG    format u'I verify workspace schema' -> u'I verify workspace schema'
+01-09 09:35 root         INFO     RequestHandler:: POST  https://www.pivotaltracker.com/services/v5//workspaces, {"name": "New workspace1"}, {'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'X-TrackerToken': '14aa1e75e7a293419cf2a1f76ed726ff', 'Content-Type': 'application/json'}
+01-09 09:35 root         INFO     RequestHandler:: POST RESPONSE:: 404, {u'kind': u'error', u'code': u'route_not_found', u'error': u'The path you requested has no valid endpoint.'}
+01-09 09:35 root         INFO     RequestHandler:: POST  https://www.pivotaltracker.com/services/v5//workspaces, {"name": "New workspace1"}, {'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'X-TrackerToken': '14aa1e75e7a293419cf2a1f76ed726ff', 'Content-Type': 'application/json'}
+01-09 09:35 root         INFO     RequestHandler:: POST RESPONSE:: 404, {u'kind': u'error', u'code': u'route_not_found', u'error': u'The path you requested has no valid endpoint.'}
+01-09 09:35 root         INFO     RequestHandler:: POST  https://www.pivotaltracker.com/services/v5//workspaces, {"name": "New workspace1"}, {'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'X-TrackerToken': '14aa1e75e7a293419cf2a1f76ed726ff', 'Content-Type': 'application/json'}
+01-09 09:35 root         INFO     RequestHandler:: POST RESPONSE:: 404, {u'kind': u'error', u'code': u'route_not_found', u'error': u'The path you requested has no valid endpoint.'}
+01-09 09:35 root         INFO     RequestHandler:: POST  https://www.pivotaltracker.com/services/v5//workspaces, {"name": "New workspace1"}, {'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'X-TrackerToken': '14aa1e75e7a293419cf2a1f76ed726ff', 'Content-Type': 'application/json'}
+01-09 09:35 root         INFO     RequestHandler:: POST RESPONSE:: 404, {u'kind': u'error', u'code': u'route_not_found', u'error': u'The path you requested has no valid endpoint.'}
+01-09 09:36 parse        DEBUG    format u'I create a epic' -> u'I create a epic'
+01-09 09:36 parse        DEBUG    format u'I update a epic' -> u'I update a epic'
+01-09 09:36 parse        DEBUG    format u'I delete the epic' -> u'I delete the epic'
+01-09 09:36 parse        DEBUG    format u'I verify epic updated status is {status_code}' -> u'I verify epic updated status is (?P<status_code>.+?)'
+01-09 09:36 parse        DEBUG    format u'I verify epic created status is {status_code}' -> u'I verify epic created status is (?P<status_code>.+?)'
+01-09 09:36 parse        DEBUG    format u'I verify epic deleted status is {status_code}' -> u'I verify epic deleted status is (?P<status_code>.+?)'
+01-09 09:36 parse        DEBUG    format u'I verify epic schema' -> u'I verify epic schema'
+01-09 09:36 parse        DEBUG    format u'I create a project' -> u'I create a project'
+01-09 09:36 parse        DEBUG    format u'I update the project' -> u'I update the project'
+01-09 09:36 parse        DEBUG    format u'I delete the project' -> u'I delete the project'
+01-09 09:36 parse        DEBUG    format u'I verify project updated status is {status_code}' -> u'I verify project updated status is (?P<status_code>.+?)'
+01-09 09:36 parse        DEBUG    format u'I verify project created status is {status_code}' -> u'I verify project created status is (?P<status_code>.+?)'
+01-09 09:36 parse        DEBUG    format u'I verify project deleted status is {status_code}' -> u'I verify project deleted status is (?P<status_code>.+?)'
+01-09 09:36 parse        DEBUG    format u'I verify project schema' -> u'I verify project schema'
+01-09 09:36 parse        DEBUG    format u'I create a workspace' -> u'I create a workspace'
+01-09 09:36 parse        DEBUG    format u'I update the workspace' -> u'I update the workspace'
+01-09 09:36 parse        DEBUG    format u'I delete the workspace' -> u'I delete the workspace'
+01-09 09:36 parse        DEBUG    format u'I verify workspace updated status is {status_code}' -> u'I verify workspace updated status is (?P<status_code>.+?)'
+01-09 09:36 parse        DEBUG    format u'I verify workspace {method_verb} status is {status_code}' -> u'I verify workspace (?P<method_verb>.+?) status is (?P<status_code>.+?)'
+01-09 09:36 parse        DEBUG    format u'I verify workspace schema' -> u'I verify workspace schema'
+01-09 09:36 root         INFO     RequestHandler:: POST  https://www.pivotaltracker.com/services/v5//workspaces, {"name": "New workspace1"}, {'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'X-TrackerToken': '14aa1e75e7a293419cf2a1f76ed726ff', 'Content-Type': 'application/json'}
+01-09 09:36 root         INFO     RequestHandler:: POST RESPONSE:: 404, {u'kind': u'error', u'code': u'route_not_found', u'error': u'The path you requested has no valid endpoint.'}
+01-09 09:36 root         INFO     RequestHandler:: POST  https://www.pivotaltracker.com/services/v5//workspaces, {"name": "New workspace1"}, {'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'X-TrackerToken': '14aa1e75e7a293419cf2a1f76ed726ff', 'Content-Type': 'application/json'}
+01-09 09:37 root         INFO     RequestHandler:: POST RESPONSE:: 404, {u'kind': u'error', u'code': u'route_not_found', u'error': u'The path you requested has no valid endpoint.'}
+01-09 09:37 root         INFO     RequestHandler:: POST  https://www.pivotaltracker.com/services/v5//workspaces, {"name": "New workspace1"}, {'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'X-TrackerToken': '14aa1e75e7a293419cf2a1f76ed726ff', 'Content-Type': 'application/json'}
+01-09 09:37 root         INFO     RequestHandler:: POST RESPONSE:: 404, {u'kind': u'error', u'code': u'route_not_found', u'error': u'The path you requested has no valid endpoint.'}
+01-09 09:37 root         INFO     RequestHandler:: POST  https://www.pivotaltracker.com/services/v5//workspaces, {"name": "New workspace1"}, {'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'X-TrackerToken': '14aa1e75e7a293419cf2a1f76ed726ff', 'Content-Type': 'application/json'}
+01-09 09:37 root         INFO     RequestHandler:: POST RESPONSE:: 404, {u'kind': u'error', u'code': u'route_not_found', u'error': u'The path you requested has no valid endpoint.'}
+01-09 09:38 parse        DEBUG    format u'I create a epic' -> u'I create a epic'
+01-09 09:38 parse        DEBUG    format u'I update a epic' -> u'I update a epic'
+01-09 09:38 parse        DEBUG    format u'I delete the epic' -> u'I delete the epic'
+01-09 09:38 parse        DEBUG    format u'I verify epic updated status is {status_code}' -> u'I verify epic updated status is (?P<status_code>.+?)'
+01-09 09:38 parse        DEBUG    format u'I verify epic created status is {status_code}' -> u'I verify epic created status is (?P<status_code>.+?)'
+01-09 09:38 parse        DEBUG    format u'I verify epic deleted status is {status_code}' -> u'I verify epic deleted status is (?P<status_code>.+?)'
+01-09 09:38 parse        DEBUG    format u'I verify epic schema' -> u'I verify epic schema'
+01-09 09:38 parse        DEBUG    format u'I create a project' -> u'I create a project'
+01-09 09:38 parse        DEBUG    format u'I update the project' -> u'I update the project'
+01-09 09:38 parse        DEBUG    format u'I delete the project' -> u'I delete the project'
+01-09 09:38 parse        DEBUG    format u'I verify project updated status is {status_code}' -> u'I verify project updated status is (?P<status_code>.+?)'
+01-09 09:38 parse        DEBUG    format u'I verify project created status is {status_code}' -> u'I verify project created status is (?P<status_code>.+?)'
+01-09 09:38 parse        DEBUG    format u'I verify project deleted status is {status_code}' -> u'I verify project deleted status is (?P<status_code>.+?)'
+01-09 09:38 parse        DEBUG    format u'I verify project schema' -> u'I verify project schema'
+01-09 09:38 parse        DEBUG    format u'I create a workspace' -> u'I create a workspace'
+01-09 09:38 parse        DEBUG    format u'I update the workspace' -> u'I update the workspace'
+01-09 09:38 parse        DEBUG    format u'I delete the workspace' -> u'I delete the workspace'
+01-09 09:38 parse        DEBUG    format u'I verify workspace updated status is {status_code}' -> u'I verify workspace updated status is (?P<status_code>.+?)'
+01-09 09:38 parse        DEBUG    format u'I verify workspace {method_verb} status is {status_code}' -> u'I verify workspace (?P<method_verb>.+?) status is (?P<status_code>.+?)'
+01-09 09:38 parse        DEBUG    format u'I verify workspace schema' -> u'I verify workspace schema'
+01-09 09:38 root         INFO     RequestHandler:: POST  https://www.pivotaltracker.com/services/v5//workspaces, {"name": "New workspace1"}, {'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'X-TrackerToken': '14aa1e75e7a293419cf2a1f76ed726ff', 'Content-Type': 'application/json'}
+01-09 09:38 root         INFO     RequestHandler:: POST RESPONSE:: 404, {u'kind': u'error', u'code': u'route_not_found', u'error': u'The path you requested has no valid endpoint.'}
+01-09 09:38 root         INFO     RequestHandler:: POST  https://www.pivotaltracker.com/services/v5//workspaces, {"name": "New workspace1"}, {'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'X-TrackerToken': '14aa1e75e7a293419cf2a1f76ed726ff', 'Content-Type': 'application/json'}
+01-09 09:38 root         INFO     RequestHandler:: POST RESPONSE:: 404, {u'kind': u'error', u'code': u'route_not_found', u'error': u'The path you requested has no valid endpoint.'}
+01-09 09:38 root         INFO     RequestHandler:: POST  https://www.pivotaltracker.com/services/v5//workspaces, {"name": "New workspace1"}, {'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'X-TrackerToken': '14aa1e75e7a293419cf2a1f76ed726ff', 'Content-Type': 'application/json'}
+01-09 09:38 root         INFO     RequestHandler:: POST RESPONSE:: 404, {u'kind': u'error', u'code': u'route_not_found', u'error': u'The path you requested has no valid endpoint.'}
+01-09 09:38 parse        DEBUG    format u'I create a epic' -> u'I create a epic'
+01-09 09:38 parse        DEBUG    format u'I update a epic' -> u'I update a epic'
+01-09 09:38 parse        DEBUG    format u'I delete the epic' -> u'I delete the epic'
+01-09 09:38 parse        DEBUG    format u'I verify epic updated status is {status_code}' -> u'I verify epic updated status is (?P<status_code>.+?)'
+01-09 09:38 parse        DEBUG    format u'I verify epic created status is {status_code}' -> u'I verify epic created status is (?P<status_code>.+?)'
+01-09 09:38 parse        DEBUG    format u'I verify epic deleted status is {status_code}' -> u'I verify epic deleted status is (?P<status_code>.+?)'
+01-09 09:38 parse        DEBUG    format u'I verify epic schema' -> u'I verify epic schema'
+01-09 09:38 parse        DEBUG    format u'I create a project' -> u'I create a project'
+01-09 09:38 parse        DEBUG    format u'I update the project' -> u'I update the project'
+01-09 09:38 parse        DEBUG    format u'I delete the project' -> u'I delete the project'
+01-09 09:38 parse        DEBUG    format u'I verify project updated status is {status_code}' -> u'I verify project updated status is (?P<status_code>.+?)'
+01-09 09:38 parse        DEBUG    format u'I verify project created status is {status_code}' -> u'I verify project created status is (?P<status_code>.+?)'
+01-09 09:38 parse        DEBUG    format u'I verify project deleted status is {status_code}' -> u'I verify project deleted status is (?P<status_code>.+?)'
+01-09 09:38 parse        DEBUG    format u'I verify project schema' -> u'I verify project schema'
+01-09 09:38 parse        DEBUG    format u'I create a workspace' -> u'I create a workspace'
+01-09 09:38 parse        DEBUG    format u'I update the workspace' -> u'I update the workspace'
+01-09 09:38 parse        DEBUG    format u'I delete the workspace' -> u'I delete the workspace'
+01-09 09:38 parse        DEBUG    format u'I verify workspace updated status is {status_code}' -> u'I verify workspace updated status is (?P<status_code>.+?)'
+01-09 09:38 parse        DEBUG    format u'I verify workspace {method_verb} status is {status_code}' -> u'I verify workspace (?P<method_verb>.+?) status is (?P<status_code>.+?)'
+01-09 09:38 parse        DEBUG    format u'I verify workspace schema' -> u'I verify workspace schema'
+01-09 09:38 root         INFO     RequestHandler:: POST  https://www.pivotaltracker.com/services/v5//projects, {"name": "First Project"}, {'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'X-TrackerToken': '14aa1e75e7a293419cf2a1f76ed726ff', 'Content-Type': 'application/json'}
+01-09 09:38 root         INFO     RequestHandler:: POST RESPONSE:: 200, {u'version': 1, u'velocity_averaged_over': 3, u'updated_at': u'2019-01-09T13:38:43Z', u'iteration_length': 1, u'project_type': u'private', u'enable_tasks': True, u'id': 2236835, u'week_start_day': u'Monday', u'point_scale_is_custom': False, u'atom_enabled': False, u'public': False, u'account_id': 1075095, u'bugs_and_chores_are_estimatable': False, u'automatic_planning': True, u'start_time': u'2019-01-07T08:00:00Z', u'enable_following': True, u'initial_velocity': 10, u'number_of_done_iterations_to_show': 4, u'kind': u'project', u'name': u'First Project', u'enable_incoming_emails': True, u'current_iteration_number': 1, u'point_scale': u'0,1,2,3', u'time_zone': {u'olson_name': u'America/Los_Angeles', u'kind': u'time_zone', u'offset': u'-08:00'}, u'has_google_domain': False, u'created_at': u'2019-01-09T13:38:43Z'}
+01-09 09:38 root         INFO     RequestHandler:: GET  https://www.pivotaltracker.com/services/v5//projects/2236835
+01-09 09:38 root         INFO     RequestHandler:: GET RESPONSE:: 200, {u'version': 1, u'velocity_averaged_over': 3, u'updated_at': u'2019-01-09T13:38:43Z', u'iteration_length': 1, u'project_type': u'private', u'enable_tasks': True, u'id': 2236835, u'week_start_day': u'Monday', u'point_scale_is_custom': False, u'atom_enabled': False, u'public': False, u'account_id': 1075095, u'bugs_and_chores_are_estimatable': False, u'automatic_planning': True, u'start_time': u'2019-01-07T08:00:00Z', u'enable_following': True, u'initial_velocity': 10, u'number_of_done_iterations_to_show': 4, u'kind': u'project', u'name': u'First Project', u'enable_incoming_emails': True, u'current_iteration_number': 1, u'point_scale': u'0,1,2,3', u'time_zone': {u'olson_name': u'America/Los_Angeles', u'kind': u'time_zone', u'offset': u'-08:00'}, u'has_google_domain': False, u'created_at': u'2019-01-09T13:38:43Z'}
+01-09 09:38 root         INFO     Getting Content of file::/src/core/api/json_schemas/project_schema.json
+01-09 09:38 root         INFO     Validate Schema
+01-09 09:38 root         INFO     RequestHandler:: GET  https://www.pivotaltracker.com/services/v5//projects
+01-09 09:38 root         INFO     RequestHandler:: GET RESPONSE:: 200, [{u'version': 2, u'velocity_averaged_over': 3, u'updated_at': u'2019-01-09T13:36:26Z', u'iteration_length': 1, u'project_type': u'private', u'enable_tasks': True, u'id': 2236833, u'week_start_day': u'Monday', u'point_scale_is_custom': False, u'atom_enabled': False, u'public': False, u'account_id': 1075095, u'bugs_and_chores_are_estimatable': False, u'automatic_planning': True, u'start_time': u'2019-01-07T08:00:00Z', u'enable_following': True, u'initial_velocity': 10, u'number_of_done_iterations_to_show': 4, u'kind': u'project', u'name': u'Sandra test1', u'enable_incoming_emails': True, u'current_iteration_number': 1, u'point_scale': u'0,1,2,3', u'time_zone': {u'olson_name': u'America/Los_Angeles', u'kind': u'time_zone', u'offset': u'-08:00'}, u'has_google_domain': False, u'created_at': u'2019-01-09T13:36:26Z'}, {u'version': 1, u'velocity_averaged_over': 3, u'updated_at': u'2019-01-09T13:38:43Z', u'iteration_length': 1, u'project_type': u'private', u'enable_tasks': True, u'id': 2236835, u'week_start_day': u'Monday', u'point_scale_is_custom': False, u'atom_enabled': False, u'public': False, u'account_id': 1075095, u'bugs_and_chores_are_estimatable': False, u'automatic_planning': True, u'start_time': u'2019-01-07T08:00:00Z', u'enable_following': True, u'initial_velocity': 10, u'number_of_done_iterations_to_show': 4, u'kind': u'project', u'name': u'First Project', u'enable_incoming_emails': True, u'current_iteration_number': 1, u'point_scale': u'0,1,2,3', u'time_zone': {u'olson_name': u'America/Los_Angeles', u'kind': u'time_zone', u'offset': u'-08:00'}, u'has_google_domain': False, u'created_at': u'2019-01-09T13:38:43Z'}]
+01-09 09:38 root         INFO     Deleting https://www.pivotaltracker.com/services/v5//projects/2236835
+01-09 09:38 root         INFO     RequestHandler:: DELETE  https://www.pivotaltracker.com/services/v5//projects/2236835
+01-09 09:38 root         INFO     RequestHandler:: DELETE RESPONSE:: 204
+01-09 09:38 root         INFO     Deleting https://www.pivotaltracker.com/services/v5//projects/2236833
+01-09 09:38 root         INFO     RequestHandler:: DELETE  https://www.pivotaltracker.com/services/v5//projects/2236833
+01-09 09:38 root         INFO     RequestHandler:: DELETE RESPONSE:: 204
+01-09 09:38 root         INFO     Delete all project created
+01-09 09:38 root         INFO     RequestHandler:: POST  https://www.pivotaltracker.com/services/v5//projects, {"name": "First Project"}, {'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'X-TrackerToken': '14aa1e75e7a293419cf2a1f76ed726ff', 'Content-Type': 'application/json'}
+01-09 09:38 root         INFO     RequestHandler:: POST RESPONSE:: 200, {u'version': 1, u'velocity_averaged_over': 3, u'updated_at': u'2019-01-09T13:38:45Z', u'iteration_length': 1, u'project_type': u'private', u'enable_tasks': True, u'id': 2236836, u'week_start_day': u'Monday', u'point_scale_is_custom': False, u'atom_enabled': False, u'public': False, u'account_id': 1075095, u'bugs_and_chores_are_estimatable': False, u'automatic_planning': True, u'start_time': u'2019-01-07T08:00:00Z', u'enable_following': True, u'initial_velocity': 10, u'number_of_done_iterations_to_show': 4, u'kind': u'project', u'name': u'First Project', u'enable_incoming_emails': True, u'current_iteration_number': 1, u'point_scale': u'0,1,2,3', u'time_zone': {u'olson_name': u'America/Los_Angeles', u'kind': u'time_zone', u'offset': u'-08:00'}, u'has_google_domain': False, u'created_at': u'2019-01-09T13:38:45Z'}
+01-09 09:38 root         INFO     RequestHandler:: PUT https://www.pivotaltracker.com/services/v5//projects/2236836, {"name": "Update Project"}, {'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'X-TrackerToken': '14aa1e75e7a293419cf2a1f76ed726ff', 'Content-Type': 'application/json'}
+01-09 09:38 root         INFO     RequestHandler:: PUT RESPONSE:: 200, {u'version': 2, u'velocity_averaged_over': 3, u'updated_at': u'2019-01-09T13:38:46Z', u'iteration_length': 1, u'project_type': u'private', u'enable_tasks': True, u'id': 2236836, u'week_start_day': u'Monday', u'point_scale_is_custom': False, u'atom_enabled': False, u'public': False, u'account_id': 1075095, u'bugs_and_chores_are_estimatable': False, u'automatic_planning': True, u'start_time': u'2019-01-07T08:00:00Z', u'enable_following': True, u'initial_velocity': 10, u'number_of_done_iterations_to_show': 4, u'kind': u'project', u'name': u'Update Project', u'enable_incoming_emails': True, u'current_iteration_number': 1, u'point_scale': u'0,1,2,3', u'time_zone': {u'olson_name': u'America/Los_Angeles', u'kind': u'time_zone', u'offset': u'-08:00'}, u'has_google_domain': False, u'created_at': u'2019-01-09T13:38:45Z'}
+01-09 09:38 root         INFO     RequestHandler:: GET  https://www.pivotaltracker.com/services/v5//projects/2236836
+01-09 09:38 root         INFO     RequestHandler:: GET RESPONSE:: 200, {u'version': 2, u'velocity_averaged_over': 3, u'updated_at': u'2019-01-09T13:38:46Z', u'iteration_length': 1, u'project_type': u'private', u'enable_tasks': True, u'id': 2236836, u'week_start_day': u'Monday', u'point_scale_is_custom': False, u'atom_enabled': False, u'public': False, u'account_id': 1075095, u'bugs_and_chores_are_estimatable': False, u'automatic_planning': True, u'start_time': u'2019-01-07T08:00:00Z', u'enable_following': True, u'initial_velocity': 10, u'number_of_done_iterations_to_show': 4, u'kind': u'project', u'name': u'Update Project', u'enable_incoming_emails': True, u'current_iteration_number': 1, u'point_scale': u'0,1,2,3', u'time_zone': {u'olson_name': u'America/Los_Angeles', u'kind': u'time_zone', u'offset': u'-08:00'}, u'has_google_domain': False, u'created_at': u'2019-01-09T13:38:45Z'}
+01-09 09:38 root         INFO     Getting Content of file::/src/core/api/json_schemas/project_schema.json
+01-09 09:38 root         INFO     Validate Schema
+01-09 09:38 root         INFO     RequestHandler:: GET  https://www.pivotaltracker.com/services/v5//projects
+01-09 09:38 root         INFO     RequestHandler:: GET RESPONSE:: 200, [{u'version': 2, u'velocity_averaged_over': 3, u'updated_at': u'2019-01-09T13:38:46Z', u'iteration_length': 1, u'project_type': u'private', u'enable_tasks': True, u'id': 2236836, u'week_start_day': u'Monday', u'point_scale_is_custom': False, u'atom_enabled': False, u'public': False, u'account_id': 1075095, u'bugs_and_chores_are_estimatable': False, u'automatic_planning': True, u'start_time': u'2019-01-07T08:00:00Z', u'enable_following': True, u'initial_velocity': 10, u'number_of_done_iterations_to_show': 4, u'kind': u'project', u'name': u'Update Project', u'enable_incoming_emails': True, u'current_iteration_number': 1, u'point_scale': u'0,1,2,3', u'time_zone': {u'olson_name': u'America/Los_Angeles', u'kind': u'time_zone', u'offset': u'-08:00'}, u'has_google_domain': False, u'created_at': u'2019-01-09T13:38:45Z'}]
+01-09 09:38 root         INFO     Deleting https://www.pivotaltracker.com/services/v5//projects/2236836
+01-09 09:38 root         INFO     RequestHandler:: DELETE  https://www.pivotaltracker.com/services/v5//projects/2236836
+01-09 09:38 root         INFO     RequestHandler:: DELETE RESPONSE:: 204
+01-09 09:38 root         INFO     Delete all project created
+01-09 09:40 parse        DEBUG    format u'I create a epic' -> u'I create a epic'
+01-09 09:40 parse        DEBUG    format u'I update a epic' -> u'I update a epic'
+01-09 09:40 parse        DEBUG    format u'I delete the epic' -> u'I delete the epic'
+01-09 09:40 parse        DEBUG    format u'I verify epic updated status is {status_code}' -> u'I verify epic updated status is (?P<status_code>.+?)'
+01-09 09:40 parse        DEBUG    format u'I verify epic created status is {status_code}' -> u'I verify epic created status is (?P<status_code>.+?)'
+01-09 09:40 parse        DEBUG    format u'I verify epic deleted status is {status_code}' -> u'I verify epic deleted status is (?P<status_code>.+?)'
+01-09 09:40 parse        DEBUG    format u'I verify epic schema' -> u'I verify epic schema'
+01-09 09:40 parse        DEBUG    format u'I create a project' -> u'I create a project'
+01-09 09:40 parse        DEBUG    format u'I update the project' -> u'I update the project'
+01-09 09:40 parse        DEBUG    format u'I delete the project' -> u'I delete the project'
+01-09 09:40 parse        DEBUG    format u'I verify project updated status is {status_code}' -> u'I verify project updated status is (?P<status_code>.+?)'
+01-09 09:40 parse        DEBUG    format u'I verify project created status is {status_code}' -> u'I verify project created status is (?P<status_code>.+?)'
+01-09 09:40 parse        DEBUG    format u'I verify project deleted status is {status_code}' -> u'I verify project deleted status is (?P<status_code>.+?)'
+01-09 09:40 parse        DEBUG    format u'I verify project schema' -> u'I verify project schema'
+01-09 09:40 parse        DEBUG    format u'I create a workspace' -> u'I create a workspace'
+01-09 09:40 parse        DEBUG    format u'I update the workspace' -> u'I update the workspace'
+01-09 09:40 parse        DEBUG    format u'I delete the workspace' -> u'I delete the workspace'
+01-09 09:40 parse        DEBUG    format u'I verify workspace updated status is {status_code}' -> u'I verify workspace updated status is (?P<status_code>.+?)'
+01-09 09:40 parse        DEBUG    format u'I verify workspace {method_verb} status is {status_code}' -> u'I verify workspace (?P<method_verb>.+?) status is (?P<status_code>.+?)'
+01-09 09:40 parse        DEBUG    format u'I verify workspace schema' -> u'I verify workspace schema'
+01-09 09:40 root         INFO     RequestHandler:: POST  https://www.pivotaltracker.com/services/v5//projects, {"name": "First Project"}, {'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'X-TrackerToken': '14aa1e75e7a293419cf2a1f76ed726ff', 'Content-Type': 'application/json'}
+01-09 09:40 root         INFO     RequestHandler:: POST RESPONSE:: 200, {u'version': 1, u'velocity_averaged_over': 3, u'updated_at': u'2019-01-09T13:40:45Z', u'iteration_length': 1, u'project_type': u'private', u'enable_tasks': True, u'id': 2236837, u'week_start_day': u'Monday', u'point_scale_is_custom': False, u'atom_enabled': False, u'public': False, u'account_id': 1075095, u'bugs_and_chores_are_estimatable': False, u'automatic_planning': True, u'start_time': u'2019-01-07T08:00:00Z', u'enable_following': True, u'initial_velocity': 10, u'number_of_done_iterations_to_show': 4, u'kind': u'project', u'name': u'First Project', u'enable_incoming_emails': True, u'current_iteration_number': 1, u'point_scale': u'0,1,2,3', u'time_zone': {u'olson_name': u'America/Los_Angeles', u'kind': u'time_zone', u'offset': u'-08:00'}, u'has_google_domain': False, u'created_at': u'2019-01-09T13:40:45Z'}
+01-09 09:40 root         INFO     RequestHandler:: GET  https://www.pivotaltracker.com/services/v5//projects/2236837
+01-09 09:40 root         INFO     RequestHandler:: GET RESPONSE:: 200, {u'version': 1, u'velocity_averaged_over': 3, u'updated_at': u'2019-01-09T13:40:45Z', u'iteration_length': 1, u'project_type': u'private', u'enable_tasks': True, u'id': 2236837, u'week_start_day': u'Monday', u'point_scale_is_custom': False, u'atom_enabled': False, u'public': False, u'account_id': 1075095, u'bugs_and_chores_are_estimatable': False, u'automatic_planning': True, u'start_time': u'2019-01-07T08:00:00Z', u'enable_following': True, u'initial_velocity': 10, u'number_of_done_iterations_to_show': 4, u'kind': u'project', u'name': u'First Project', u'enable_incoming_emails': True, u'current_iteration_number': 1, u'point_scale': u'0,1,2,3', u'time_zone': {u'olson_name': u'America/Los_Angeles', u'kind': u'time_zone', u'offset': u'-08:00'}, u'has_google_domain': False, u'created_at': u'2019-01-09T13:40:45Z'}
+01-09 09:40 root         INFO     Getting Content of file::/src/core/api/json_schemas/project_schema.json
+01-09 09:40 root         INFO     Validate Schema
+01-09 09:42 parse        DEBUG    format u'I create a epic' -> u'I create a epic'
+01-09 09:42 parse        DEBUG    format u'I update a epic' -> u'I update a epic'
+01-09 09:42 parse        DEBUG    format u'I delete the epic' -> u'I delete the epic'
+01-09 09:42 parse        DEBUG    format u'I verify epic updated status is {status_code}' -> u'I verify epic updated status is (?P<status_code>.+?)'
+01-09 09:42 parse        DEBUG    format u'I verify epic created status is {status_code}' -> u'I verify epic created status is (?P<status_code>.+?)'
+01-09 09:42 parse        DEBUG    format u'I verify epic deleted status is {status_code}' -> u'I verify epic deleted status is (?P<status_code>.+?)'
+01-09 09:42 parse        DEBUG    format u'I verify epic schema' -> u'I verify epic schema'
+01-09 09:42 parse        DEBUG    format u'I create a project' -> u'I create a project'
+01-09 09:42 parse        DEBUG    format u'I update the project' -> u'I update the project'
+01-09 09:42 parse        DEBUG    format u'I delete the project' -> u'I delete the project'
+01-09 09:42 parse        DEBUG    format u'I verify project updated status is {status_code}' -> u'I verify project updated status is (?P<status_code>.+?)'
+01-09 09:42 parse        DEBUG    format u'I verify project created status is {status_code}' -> u'I verify project created status is (?P<status_code>.+?)'
+01-09 09:42 parse        DEBUG    format u'I verify project deleted status is {status_code}' -> u'I verify project deleted status is (?P<status_code>.+?)'
+01-09 09:42 parse        DEBUG    format u'I verify project schema' -> u'I verify project schema'
+01-09 09:42 parse        DEBUG    format u'I create a workspace' -> u'I create a workspace'
+01-09 09:42 parse        DEBUG    format u'I update the workspace' -> u'I update the workspace'
+01-09 09:42 parse        DEBUG    format u'I delete the workspace' -> u'I delete the workspace'
+01-09 09:42 parse        DEBUG    format u'I verify workspace updated status is {status_code}' -> u'I verify workspace updated status is (?P<status_code>.+?)'
+01-09 09:42 parse        DEBUG    format u'I verify workspace {method_verb} status is {status_code}' -> u'I verify workspace (?P<method_verb>.+?) status is (?P<status_code>.+?)'
+01-09 09:42 parse        DEBUG    format u'I verify workspace schema' -> u'I verify workspace schema'
+01-09 09:42 root         INFO     RequestHandler:: POST  https://www.pivotaltracker.com/services/v5//workspaces, {"name": "New workspace1"}, {'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'X-TrackerToken': '14aa1e75e7a293419cf2a1f76ed726ff', 'Content-Type': 'application/json'}
+01-09 09:42 root         INFO     RequestHandler:: POST RESPONSE:: 404, {u'kind': u'error', u'code': u'route_not_found', u'error': u'The path you requested has no valid endpoint.'}
+01-09 09:44 parse        DEBUG    format u'I create a epic' -> u'I create a epic'
+01-09 09:44 parse        DEBUG    format u'I update a epic' -> u'I update a epic'
+01-09 09:44 parse        DEBUG    format u'I delete the epic' -> u'I delete the epic'
+01-09 09:44 parse        DEBUG    format u'I verify epic updated status is {status_code}' -> u'I verify epic updated status is (?P<status_code>.+?)'
+01-09 09:44 parse        DEBUG    format u'I verify epic created status is {status_code}' -> u'I verify epic created status is (?P<status_code>.+?)'
+01-09 09:44 parse        DEBUG    format u'I verify epic deleted status is {status_code}' -> u'I verify epic deleted status is (?P<status_code>.+?)'
+01-09 09:44 parse        DEBUG    format u'I verify epic schema' -> u'I verify epic schema'
+01-09 09:44 parse        DEBUG    format u'I create a project' -> u'I create a project'
+01-09 09:44 parse        DEBUG    format u'I update the project' -> u'I update the project'
+01-09 09:44 parse        DEBUG    format u'I delete the project' -> u'I delete the project'
+01-09 09:44 parse        DEBUG    format u'I verify project updated status is {status_code}' -> u'I verify project updated status is (?P<status_code>.+?)'
+01-09 09:44 parse        DEBUG    format u'I verify project created status is {status_code}' -> u'I verify project created status is (?P<status_code>.+?)'
+01-09 09:44 parse        DEBUG    format u'I verify project deleted status is {status_code}' -> u'I verify project deleted status is (?P<status_code>.+?)'
+01-09 09:44 parse        DEBUG    format u'I verify project schema' -> u'I verify project schema'
+01-09 09:44 parse        DEBUG    format u'I create a workspace' -> u'I create a workspace'
+01-09 09:44 parse        DEBUG    format u'I update the workspace' -> u'I update the workspace'
+01-09 09:44 parse        DEBUG    format u'I delete the workspace' -> u'I delete the workspace'
+01-09 09:44 parse        DEBUG    format u'I verify workspace updated status is {status_code}' -> u'I verify workspace updated status is (?P<status_code>.+?)'
+01-09 09:44 parse        DEBUG    format u'I verify workspace {method_verb} status is {status_code}' -> u'I verify workspace (?P<method_verb>.+?) status is (?P<status_code>.+?)'
+01-09 09:44 parse        DEBUG    format u'I verify workspace schema' -> u'I verify workspace schema'
+01-09 09:44 root         INFO     RequestHandler:: POST  https://www.pivotaltracker.com/services/v5//my/workspaces, {"name": "New workspace1"}, {'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'X-TrackerToken': '14aa1e75e7a293419cf2a1f76ed726ff', 'Content-Type': 'application/json'}
+01-09 09:44 root         INFO     RequestHandler:: POST RESPONSE:: 200, {u'person_id': 3128914, u'kind': u'workspace', u'project_ids': [], u'id': 722877, u'name': u'New workspace1'}
+01-09 09:46 parse        DEBUG    format u'I create a epic' -> u'I create a epic'
+01-09 09:46 parse        DEBUG    format u'I update a epic' -> u'I update a epic'
+01-09 09:46 parse        DEBUG    format u'I delete the epic' -> u'I delete the epic'
+01-09 09:46 parse        DEBUG    format u'I verify epic updated status is {status_code}' -> u'I verify epic updated status is (?P<status_code>.+?)'
+01-09 09:46 parse        DEBUG    format u'I verify epic created status is {status_code}' -> u'I verify epic created status is (?P<status_code>.+?)'
+01-09 09:46 parse        DEBUG    format u'I verify epic deleted status is {status_code}' -> u'I verify epic deleted status is (?P<status_code>.+?)'
+01-09 09:46 parse        DEBUG    format u'I verify epic schema' -> u'I verify epic schema'
+01-09 09:46 parse        DEBUG    format u'I create a project' -> u'I create a project'
+01-09 09:46 parse        DEBUG    format u'I update the project' -> u'I update the project'
+01-09 09:46 parse        DEBUG    format u'I delete the project' -> u'I delete the project'
+01-09 09:46 parse        DEBUG    format u'I verify project updated status is {status_code}' -> u'I verify project updated status is (?P<status_code>.+?)'
+01-09 09:46 parse        DEBUG    format u'I verify project created status is {status_code}' -> u'I verify project created status is (?P<status_code>.+?)'
+01-09 09:46 parse        DEBUG    format u'I verify project deleted status is {status_code}' -> u'I verify project deleted status is (?P<status_code>.+?)'
+01-09 09:46 parse        DEBUG    format u'I verify project schema' -> u'I verify project schema'
+01-09 09:46 parse        DEBUG    format u'I create a workspace' -> u'I create a workspace'
+01-09 09:46 parse        DEBUG    format u'I update the workspace' -> u'I update the workspace'
+01-09 09:46 parse        DEBUG    format u'I delete the workspace' -> u'I delete the workspace'
+01-09 09:46 parse        DEBUG    format u'I verify workspace updated status is {status_code}' -> u'I verify workspace updated status is (?P<status_code>.+?)'
+01-09 09:46 parse        DEBUG    format u'I verify workspace {method_verb} status is {status_code}' -> u'I verify workspace (?P<method_verb>.+?) status is (?P<status_code>.+?)'
+01-09 09:46 parse        DEBUG    format u'I verify workspace schema' -> u'I verify workspace schema'
+01-09 09:46 root         INFO     RequestHandler:: POST  https://www.pivotaltracker.com/services/v5//my/workspaces, {"name": "New workspace1"}, {'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'X-TrackerToken': '14aa1e75e7a293419cf2a1f76ed726ff', 'Content-Type': 'application/json'}
+01-09 09:46 root         INFO     RequestHandler:: POST RESPONSE:: 400, {u'kind': u'error', u'code': u'invalid_parameter', u'general_problem': u'The workspace name you entered is already taken.', u'error': u'One or more request parameters was missing or invalid.'}
+01-09 09:47 parse        DEBUG    format u'I create a epic' -> u'I create a epic'
+01-09 09:47 parse        DEBUG    format u'I update a epic' -> u'I update a epic'
+01-09 09:47 parse        DEBUG    format u'I delete the epic' -> u'I delete the epic'
+01-09 09:47 parse        DEBUG    format u'I verify epic updated status is {status_code}' -> u'I verify epic updated status is (?P<status_code>.+?)'
+01-09 09:47 parse        DEBUG    format u'I verify epic created status is {status_code}' -> u'I verify epic created status is (?P<status_code>.+?)'
+01-09 09:47 parse        DEBUG    format u'I verify epic deleted status is {status_code}' -> u'I verify epic deleted status is (?P<status_code>.+?)'
+01-09 09:47 parse        DEBUG    format u'I verify epic schema' -> u'I verify epic schema'
+01-09 09:47 parse        DEBUG    format u'I create a project' -> u'I create a project'
+01-09 09:47 parse        DEBUG    format u'I update the project' -> u'I update the project'
+01-09 09:47 parse        DEBUG    format u'I delete the project' -> u'I delete the project'
+01-09 09:47 parse        DEBUG    format u'I verify project updated status is {status_code}' -> u'I verify project updated status is (?P<status_code>.+?)'
+01-09 09:47 parse        DEBUG    format u'I verify project created status is {status_code}' -> u'I verify project created status is (?P<status_code>.+?)'
+01-09 09:47 parse        DEBUG    format u'I verify project deleted status is {status_code}' -> u'I verify project deleted status is (?P<status_code>.+?)'
+01-09 09:47 parse        DEBUG    format u'I verify project schema' -> u'I verify project schema'
+01-09 09:47 parse        DEBUG    format u'I create a workspace' -> u'I create a workspace'
+01-09 09:47 parse        DEBUG    format u'I update the workspace' -> u'I update the workspace'
+01-09 09:47 parse        DEBUG    format u'I delete the workspace' -> u'I delete the workspace'
+01-09 09:47 parse        DEBUG    format u'I verify workspace updated status is {status_code}' -> u'I verify workspace updated status is (?P<status_code>.+?)'
+01-09 09:47 parse        DEBUG    format u'I verify workspace {method_verb} status is {status_code}' -> u'I verify workspace (?P<method_verb>.+?) status is (?P<status_code>.+?)'
+01-09 09:47 parse        DEBUG    format u'I verify workspace schema' -> u'I verify workspace schema'
+01-09 09:47 root         INFO     RequestHandler:: POST  https://www.pivotaltracker.com/services/v5//my/workspaces, {"name": "New workspace1"}, {'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'X-TrackerToken': '14aa1e75e7a293419cf2a1f76ed726ff', 'Content-Type': 'application/json'}
+01-09 09:47 root         INFO     RequestHandler:: POST RESPONSE:: 200, {u'person_id': 3128914, u'kind': u'workspace', u'project_ids': [], u'id': 722879, u'name': u'New workspace1'}
+01-09 09:47 root         INFO     RequestHandler:: GET  https://www.pivotaltracker.com/services/v5//my/workspaces/722879
+01-09 09:47 root         INFO     RequestHandler:: GET RESPONSE:: 200, {u'person_id': 3128914, u'kind': u'workspace', u'project_ids': [], u'id': 722879, u'name': u'New workspace1'}
+01-09 09:47 root         INFO     Getting Content of file::/src/core/api/json_schemas/workspace_schema.json
+01-09 09:47 root         INFO     Validate Schema
+01-09 09:58 parse        DEBUG    format u'I create a epic' -> u'I create a epic'
+01-09 09:58 parse        DEBUG    format u'I update a epic' -> u'I update a epic'
+01-09 09:58 parse        DEBUG    format u'I delete the epic' -> u'I delete the epic'
+01-09 09:58 parse        DEBUG    format u'I verify epic updated status is {status_code}' -> u'I verify epic updated status is (?P<status_code>.+?)'
+01-09 09:58 parse        DEBUG    format u'I verify epic created status is {status_code}' -> u'I verify epic created status is (?P<status_code>.+?)'
+01-09 09:58 parse        DEBUG    format u'I verify epic deleted status is {status_code}' -> u'I verify epic deleted status is (?P<status_code>.+?)'
+01-09 09:58 parse        DEBUG    format u'I verify epic schema' -> u'I verify epic schema'
+01-09 09:58 parse        DEBUG    format u'I create a project' -> u'I create a project'
+01-09 09:58 parse        DEBUG    format u'I update the project' -> u'I update the project'
+01-09 09:58 parse        DEBUG    format u'I delete the project' -> u'I delete the project'
+01-09 09:58 parse        DEBUG    format u'I verify project updated status is {status_code}' -> u'I verify project updated status is (?P<status_code>.+?)'
+01-09 09:58 parse        DEBUG    format u'I verify project created status is {status_code}' -> u'I verify project created status is (?P<status_code>.+?)'
+01-09 09:58 parse        DEBUG    format u'I verify project deleted status is {status_code}' -> u'I verify project deleted status is (?P<status_code>.+?)'
+01-09 09:58 parse        DEBUG    format u'I verify project schema' -> u'I verify project schema'
+01-09 09:58 parse        DEBUG    format u'I create a workspace' -> u'I create a workspace'
+01-09 09:58 parse        DEBUG    format u'I get a workspace' -> u'I get a workspace'
+01-09 09:58 parse        DEBUG    format u'I update the workspace' -> u'I update the workspace'
+01-09 09:58 parse        DEBUG    format u'I delete the workspace' -> u'I delete the workspace'
+01-09 09:58 parse        DEBUG    format u'I verify workspace updated status is {status_code}' -> u'I verify workspace updated status is (?P<status_code>.+?)'
+01-09 09:58 parse        DEBUG    format u'I verify workspace {method_verb} status is {status_code}' -> u'I verify workspace (?P<method_verb>.+?) status is (?P<status_code>.+?)'
+01-09 09:58 parse        DEBUG    format u'I verify workspace schema' -> u'I verify workspace schema'
+01-09 09:58 root         INFO     RequestHandler:: POST  https://www.pivotaltracker.com/services/v5//my/workspaces, {"name": "New workspace1"}, {'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'X-TrackerToken': '14aa1e75e7a293419cf2a1f76ed726ff', 'Content-Type': 'application/json'}
+01-09 09:58 root         INFO     RequestHandler:: POST RESPONSE:: 400, {u'kind': u'error', u'code': u'invalid_parameter', u'general_problem': u'The workspace name you entered is already taken.', u'error': u'One or more request parameters was missing or invalid.'}
+01-09 09:58 root         INFO     RequestHandler:: POST  https://www.pivotaltracker.com/services/v5//my/workspaces, {"name": "New workspace1"}, {'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'X-TrackerToken': '14aa1e75e7a293419cf2a1f76ed726ff', 'Content-Type': 'application/json'}
+01-09 09:58 root         INFO     RequestHandler:: POST RESPONSE:: 400, {u'kind': u'error', u'code': u'invalid_parameter', u'general_problem': u'The workspace name you entered is already taken.', u'error': u'One or more request parameters was missing or invalid.'}
+01-09 10:00 parse        DEBUG    format u'I create a epic' -> u'I create a epic'
+01-09 10:00 parse        DEBUG    format u'I update a epic' -> u'I update a epic'
+01-09 10:00 parse        DEBUG    format u'I delete the epic' -> u'I delete the epic'
+01-09 10:00 parse        DEBUG    format u'I verify epic updated status is {status_code}' -> u'I verify epic updated status is (?P<status_code>.+?)'
+01-09 10:00 parse        DEBUG    format u'I verify epic created status is {status_code}' -> u'I verify epic created status is (?P<status_code>.+?)'
+01-09 10:00 parse        DEBUG    format u'I verify epic deleted status is {status_code}' -> u'I verify epic deleted status is (?P<status_code>.+?)'
+01-09 10:00 parse        DEBUG    format u'I verify epic schema' -> u'I verify epic schema'
+01-09 10:00 parse        DEBUG    format u'I create a project' -> u'I create a project'
+01-09 10:00 parse        DEBUG    format u'I update the project' -> u'I update the project'
+01-09 10:00 parse        DEBUG    format u'I delete the project' -> u'I delete the project'
+01-09 10:00 parse        DEBUG    format u'I verify project updated status is {status_code}' -> u'I verify project updated status is (?P<status_code>.+?)'
+01-09 10:00 parse        DEBUG    format u'I verify project created status is {status_code}' -> u'I verify project created status is (?P<status_code>.+?)'
+01-09 10:00 parse        DEBUG    format u'I verify project deleted status is {status_code}' -> u'I verify project deleted status is (?P<status_code>.+?)'
+01-09 10:00 parse        DEBUG    format u'I verify project schema' -> u'I verify project schema'
+01-09 10:00 parse        DEBUG    format u'I create a workspace' -> u'I create a workspace'
+01-09 10:00 parse        DEBUG    format u'I get a workspace' -> u'I get a workspace'
+01-09 10:00 parse        DEBUG    format u'I update the workspace' -> u'I update the workspace'
+01-09 10:00 parse        DEBUG    format u'I delete the workspace' -> u'I delete the workspace'
+01-09 10:00 parse        DEBUG    format u'I verify workspace updated status is {status_code}' -> u'I verify workspace updated status is (?P<status_code>.+?)'
+01-09 10:00 parse        DEBUG    format u'I verify workspace {method_verb} status is {status_code}' -> u'I verify workspace (?P<method_verb>.+?) status is (?P<status_code>.+?)'
+01-09 10:00 parse        DEBUG    format u'I verify workspace schema' -> u'I verify workspace schema'
+01-09 10:00 root         INFO     RequestHandler:: POST  https://www.pivotaltracker.com/services/v5//my/workspaces, {"name": "New workspace1"}, {'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'User-Agent': 'python-requests/2.21.0', 'Connection': 'keep-alive', 'X-TrackerToken': '14aa1e75e7a293419cf2a1f76ed726ff', 'Content-Type': 'application/json'}
+01-09 10:00 root         INFO     RequestHandler:: POST RESPONSE:: 200, {u'person_id': 3128914, u'kind': u'workspace', u'project_ids': [], u'id': 722883, u'name': u'New workspace1'}
+01-09 10:00 root         INFO     RequestHandler:: GET  https://www.pivotaltracker.com/services/v5//my/workspaces/722883
+01-09 10:00 root         INFO     RequestHandler:: GET RESPONSE:: 200, {u'person_id': 3128914, u'kind': u'workspace', u'project_ids': [], u'id': 722883, u'name': u'New workspace1'}

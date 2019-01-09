@@ -10,7 +10,7 @@ class WorkspaceServices(PivotalServices):
 
     def __init__(self):
         super(WorkspaceServices, self).__init__()
-        self.__workspaces = "{}/workspaces".format(self.request_handler.main_url)
+        self.__workspaces = "{}/my/workspaces".format(self.request_handler.main_url)
         self.__workspaces_schema_path = "/src/core/api/json_schemas/workspace_schema.json"
         self.workspace = {}
         self.workspaces = {}
