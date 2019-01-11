@@ -4,3 +4,4 @@ jsonschema
 simplejson
 pyyaml
 gherkin-official
+allure-behave
