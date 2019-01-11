@@ -6,7 +6,7 @@ before_script:
   - pip install -r requirements.txt
 
 script:
-  - behave features
+  - behave -f allure_behave.formatter:AllureFormatter -o allure_result_folder
 
 branches:
   only:
